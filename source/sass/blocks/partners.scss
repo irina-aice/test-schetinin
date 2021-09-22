@@ -1,0 +1,15 @@
+.partners__list {
+  @include reset-list;
+}
+
+@media (min-width: $width-desktop) {
+  .partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.partners__item {
+  max-width: 140px;
+}
