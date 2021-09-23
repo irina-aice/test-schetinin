@@ -7,6 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: "Koedu", "Roboto", sans-serif;
+  font-size: 1.04rem;
+  line-height: 1.45em;
+  font-weight: 100;
+  color: $dark-blue;
 }
 
 main {

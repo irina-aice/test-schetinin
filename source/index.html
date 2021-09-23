@@ -9,8 +9,8 @@
 </head>
 <body>
   <header class="header">
-    <div>
-      <a class="logo">
+    <div class="header__inner">
+      <a class="header__logo logo">
         <svg width=247 height="34">
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
@@ -26,14 +26,16 @@
           <li class="header__contacts-item">
             <a href="#">Санкт-Петербург, Московская 11</a>
           </li>
-          <li class="header__contacts-item">
+        </ul>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item header__contacts-item--button">
             <a href="#">Заказать звонок</a>
           </li>
-          <li class="header__contacts-item">
-            <a href="#">Версия для слабовидящих</a>
+          <li class="header__contacts-item header__contacts-item--button">
+            <a href="#">для слабовидящих</a>
           </li>
-          <li class="header__contacts-item">
-            <a href="#">Вход в личный кабинет</a>
+          <li class="header__contacts-item header__contacts-item--button">
+            <a href="#">личный кабинет</a>
           </li>
         </ul>
       </div>
@@ -43,35 +45,65 @@
         <li class="nav__item">
           <a href="#">Главная</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">Курсы</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">Повышение квалификации</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">Переподготовка</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">Расписание занятий</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">Вопросы и ответы</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">О нас</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">Отзывы слушателей</a>
         </li>
-        <li>
+        <li class="nav__item">
           <a href="#">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="slider"></section>
+  <main class="main">
+    <section class="slider">
+      <div class="js-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slider__content">
+            <div>
+              <h2>Три профессии по цене 2х</h2>
+              <p>Обучись по любым трем профессиям, по цене двух</p>
+              <a href="#">Подробнее</a>
+            </div>
+            <img src="img/slider-three-course.jpg" alt="Книги с колокольчиком">
+          </div>
+          <div class="swiper-slide slider__content">
+            <div>
+              <h2>Не упусти свой шанс</h2>
+              <p>Акции, скидки и спецпредложения</p>
+              <a href="#">Подробнее</a>
+            </div>
+            <img src="img/slider-sales.jpg" alt="Громкоговоритель и ноутбук">
+          </div>
+          <div class="swiper-slide slider__content">
+            <div>
+              <h2>Курсы профессиональной переподготовки</h2>
+              <p>Дистанционное обучение без отрыва</p>
+              <a href="#">Подробнее</a>
+            </div>
+            <img src="img/slider-kursy-online.jpg" alt="Ноутбук и галочка">
+          </div>
+        </div>
+        <div class="js-slider-pagination slider__pagination"></div>
+      </div>
+    </section>
     <section class="education">
       <h2>Основные направления обучения</h2>
       <ul>
@@ -211,5 +243,7 @@
       </li>
     </ul>
   </footer>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

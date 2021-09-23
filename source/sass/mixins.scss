@@ -3,3 +3,21 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100%;
+    max-width: 1190px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+}

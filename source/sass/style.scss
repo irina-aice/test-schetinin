@@ -1,8 +1,13 @@
+@import "node_modules/swiper/swiper-bundle";
 @import "node_modules/modern-normalize/modern-normalize";
 @import "variables";
 @import "mixins";
+@import "fonts";
+@import "colors";
 @import "global";
 @import "blocks/header";
 @import "blocks/nav";
+@import "blocks/main";
+@import "blocks/slider";
 @import "blocks/partners";
 @import "blocks/footer";

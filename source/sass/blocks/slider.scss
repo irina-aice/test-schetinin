@@ -1,0 +1,18 @@
+.slider__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__pagination-bullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightblue;
+  margin-left: 5px;
+
+  &--active {
+    //width: 20px;
+    background-color: blue;
+  }
+}
