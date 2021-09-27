@@ -14,17 +14,31 @@
   .nav__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
 @media (min-width: $width-desktop) {
   .nav__item {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 1.4rem .55rem 1.3rem;
   }
 
   .nav__item a {
+    display: inline-block;
     color: $blue;
+  }
+
+  .nav__item a:hover {
+    color: $white;
+  }
+
+  .nav__item:hover {
+    background-color: $blue;
+    color: $white;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+
+  .nav__item:hover a {
+    color: inherit;
   }
 }

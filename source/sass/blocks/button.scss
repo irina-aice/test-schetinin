@@ -1,0 +1,22 @@
+.button a {
+  display: inline-flex;
+  min-height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: .90rem;
+  letter-spacing: -.015rem;
+  border-radius: .5rem;
+  align-items: center;
+  text-transform: uppercase;
+  color: $deep-blue;
+  background-color: $light-blue;
+
+  &--header a {
+    max-width: 13rem;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $dark-blue;
+  }
+}

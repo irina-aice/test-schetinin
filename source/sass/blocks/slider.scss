@@ -1,4 +1,10 @@
-.slider__content {
+@media (min-width: $width-desktop) {
+  .slider {
+    padding-top: 30px;
+  }
+}
+
+  .slider__content {
   display: flex;
   flex-direction: column;
 }
@@ -6,6 +12,14 @@
 @media (min-width: $width-desktop) {
   .slider__content {
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .slider__description {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 }
@@ -21,7 +35,7 @@
 
 @media (min-width: $width-desktop) {
   .slider__content h2 {
-    padding: .1rem 0;
+    padding: .5rem 0;
     font-size: 3.75rem;
     line-height: 1.1em;
   }
@@ -48,18 +62,39 @@
   border-radius: .78rem;
   color: $white;
   background-color: $blue;
+
+  &::after {
+    content: "";
+    width: 11px;
+    height: 21px;
+    margin-left: 20px;
+    background-image: url("../img/white_arrow.png");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .slider__button-wrapper {
+    margin-bottom: 40px;
+  }
 }
 
 .slider__pagination-bullet {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: .83rem;
+  height: .83rem;
   border-radius: 50%;
-  background-color: lightblue;
-  margin-left: 5px;
+  background-color: $lighter-blue;
+  margin-left: .43rem;
+  cursor: pointer;
 
   &--active {
-    //width: 20px;
-    background-color: blue;
+    width: 1.7rem;
+    border-radius: .83rem;
+    background-color: $blue;
   }
 }

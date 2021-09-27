@@ -1,0 +1,10 @@
+.social {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-column-gap: 5px;
+}
+
+.social li + li {
+  margin-left: 20px;
+}

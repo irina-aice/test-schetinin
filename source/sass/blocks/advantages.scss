@@ -1,0 +1,23 @@
+.advantages__list {
+  @include reset-list;
+}
+
+@media (min-width: $width-desktop) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  .advantages__item {
+    justify-self: center;
+  }
+
+  .advantages__item img {
+    margin: 0 auto;
+  }
+
+  .advantages__item p {
+    text-align: center;
+  }
+}

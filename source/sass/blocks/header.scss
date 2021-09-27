@@ -32,26 +32,15 @@
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+
+  .header__contacts-list + .header__contacts-list {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $width-desktop) {
   .header__contacts-item {
     color: $blue;
-
-    &--button a {
-      display: inline-flex;
-      min-height: 30px;
-      max-width: 13rem;
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: .90rem;
-      letter-spacing: -.015rem;
-      border-radius: .5rem;
-      align-items: center;
-      text-transform: uppercase;
-      color: $deep-blue;
-      background-color: $light-blue;
-    }
   }
 
   .header__contacts-item +   .header__contacts-item {

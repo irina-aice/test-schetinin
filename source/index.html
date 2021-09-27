@@ -28,13 +28,13 @@
           </li>
         </ul>
         <ul class="header__contacts-list">
-          <li class="header__contacts-item header__contacts-item--button">
+          <li class="header__contacts-item button button--header">
             <a href="#">Заказать звонок</a>
           </li>
-          <li class="header__contacts-item header__contacts-item--button">
+          <li class="header__contacts-item button button--header">
             <a href="#">для слабовидящих</a>
           </li>
-          <li class="header__contacts-item header__contacts-item--button">
+          <li class="header__contacts-item button button--header">
             <a href="#">личный кабинет</a>
           </li>
         </ul>
@@ -77,26 +77,38 @@
       <div class="js-slider swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide slider__content">
-            <div>
-              <h2>Три профессии <br>по цене 2х</h2>
-              <p class="slider__information">Обучись по любым трем профессиям, по цене двух</p>
-              <a class="slider__button" href="#">Подробнее</a>
+            <div class="slider__description">
+              <div class="slider__inner">
+                <h2>Три профессии <br>по цене 2х</h2>
+                <p class="slider__information">Обучись по любым трем профессиям, по цене двух</p>
+              </div>
+              <div class="slider__button-wrapper">
+                <a class="slider__button" href="#">Подробнее</a>
+              </div>
             </div>
             <img src="img/slider-three-course.jpg" alt="Книги с колокольчиком">
           </div>
           <div class="swiper-slide slider__content">
-            <div>
-              <h2>Не упусти свой шанс</h2>
-              <p class="slider__information">Акции, скидки и спецпредложения</p>
-              <a class="slider__button" href="#">Подробнее</a>
+            <div class="slider__description">
+              <div class="slider__inner">
+                <h2>Не упусти свой шанс</h2>
+                <p class="slider__information">Акции, скидки и спецпредложения</p>
+              </div>
+              <div class="slider__button-wrapper">
+                <a class="slider__button" href="#">Подробнее</a>
+              </div>
             </div>
             <img src="img/slider-sales.jpg" alt="Громкоговоритель и ноутбук">
           </div>
           <div class="swiper-slide slider__content">
-            <div>
-              <h2>Курсы профессиональной переподготовки</h2>
-              <p class="slider__information">Дистанционное обучение без отрыва</p>
-              <a class="slider__button" href="#">Подробнее</a>
+            <div class="slider__description">
+              <div class="slider__inner">
+                <h2>Курсы профессиональной переподготовки</h2>
+                <p class="slider__information">Дистанционное обучение без отрыва</p>
+              </div>
+              <div class="slider__button-wrapper">
+                <a class="slider__button" href="#">Подробнее</a>
+              </div>
             </div>
             <img src="img/slider-kursy-online.jpg" alt="Ноутбук и галочка">
           </div>
@@ -113,13 +125,23 @@
       </ul>
     </section>
     <section class="advantages">
-      <ul>
-        <li>Зарегистрируйтесь сегодня и получите пакет вебинаров в подарок.</li>
-        <li>Инновационная система дистанционного образования</li>
-        <li>Рассрочка платежа</li>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img src="img/webinar.jpg" alt="Книга с треугольником">
+          <p>Зарегистрируйтесь сегодня и получите пакет вебинаров в подарок.</p>
+        </li>
+        <li class="advantages__item">
+          <img src="img/online.jpg" alt="Ноутбук и мышка">
+          <p>Инновационная система дистанционного образования</p>
+        </li>
+        <li class="advantages__item">
+          <img src="img/instalments.jpg" alt="Смайлик с цветком">
+          <p>Рассрочка платежа</p>
+        </li>
       </ul>
     </section>
     <section class="partners">
+      <h2>Партнеры</h2>
       <ul class="partners__list">
         <li class="partners__item">
           <a href="#">
@@ -155,91 +177,106 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="logo"></a>
-    <ul>
-      <li>
-        <a href="#">Главная</a>
-      </li>
-      <li>
-        <a href="#">Курсы</a>
-      </li>
-      <li>
-        <a href="#">Повышение квалификации</a>
-      </li>
-      <li>
-        <a href="#">Переподготовка</a>
-      </li>
-      <li>
-        <a href="#">Расписание занятий</a>
-      </li>
-      <li>
-        <a href="#">Вопросы и ответы</a>
-      </li>
-      <li>
-        <a href="#">О нас</a>
-      </li>
-      <li>
-        <a href="#">Отзывы слушателей</a>
-      </li>
-      <li>
-        <a href="#">Контакты</a>
-      </li>
-    </ul>
-    <div>
-      <a href="#">Подписаться на рассылку</a>
+    <div class="footer__links">
+      <a class="footer__logo logo">
+        <svg width=247 height="34">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Курсы</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Повышение квалификации</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Переподготовка</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Расписание занятий</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Вопросы и ответы</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">О нас</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Отзывы слушателей</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#">Налоговый вычет</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Политика обработки персональных данных</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Дистанционное обучение</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Расписание занятий</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Сведения об образовательной организации ООО МПЦ "Феникс"</a>
+        </li>
+        <li class="footer__item">
+          <a href="#">Сведения об образовательной организации АНО ДПО МПЦ "Феникс"</a>
+        </li>
+      </ul>
     </div>
-    <ul class="social">
-      <li>
-        <a href="#">
-          <span>Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Youtube</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Instagram</span>
-        </a>
-      </li>
-    </ul>
-    <ul>
-      <li>
+    <div class="footer__social-wrapper">
+      <ul class="footer__list-buttons">
+        <li class="button">
+          <a href="#">Подписаться на рассылку</a>
+        </li>
+        <li class="button">
+          <a href="#">Заказать звонок</a>
+        </li>
+        <li class="button">
+          <a href="#">Версия для слабовидящих</a>
+        </li>
+      </ul>
+      <div class="footer__social">
+        <ul class="social">
+          <li>
+            <a href="#">
+              <img src="img/facebook.png" alt="Facebook" width="56" height="56">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/youtube.png" alt="Youtube">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/instagram.png" alt="Instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="footer__contacts">
+      <li class="footer__contacts-item">
         <a href="tel:+7801100777">801 100 777</a>
       </li>
-      <li>
+      <li class="footer__contacts-item">
         <a href="mailto:info@gmail.ru">info@gmail.ru</a>
       </li>
-      <li>
+      <li class="footer__contacts-item">
         <a href="#">Санкт-Петербург, Московская 11</a>
-      </li>
-      <li>
-        <a href="#">Заказать звонок</a>
-      </li>
-      <li>
-        <a href="#">Версия для слабовидящих</a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="#">Налоговый вычет</a>
-      </li>
-      <li>
-        <a href="#">Политика обработки персональных данных</a>
-      </li>
-      <li>
-        <a href="#">Дистанционное обучение</a>
-      </li>
-      <li>
-        <a href="#">Расписание занятий</a>
-      </li>
-      <li>
-        <a href="#">Сведения об образовательной организации ООО МПЦ "Феникс"</a>
-      </li>
-      <li>
-        <a href="#">Сведения об образовательной организации АНО ДПО МПЦ "Феникс"</a>
       </li>
     </ul>
   </footer>
